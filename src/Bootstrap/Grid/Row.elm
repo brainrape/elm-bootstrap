@@ -1,4 +1,8 @@
-module Bootstrap.Grid.Row exposing (..)
+module Bootstrap.Grid.Row exposing
+    ( topXs, topSm, topMd, topLg, topXl, middleXs, middleSm, middleMd, middleLg, middleXl, bottomXs, bottomSm, bottomMd, bottomLg, bottomXl
+    , leftXs, leftSm, leftMd, leftLg, leftXl, centerXs, centerSm, centerMd, centerLg, centerXl, rightXs, rightSm, rightMd, rightLg, rightXl, aroundXs, aroundSm, aroundMd, aroundLg, aroundXl, betweenXs, betweenSm, betweenMd, betweenLg, betweenXl
+    , attrs, Option
+    )
 
 {-| Functions for creating grid row options.
 
@@ -19,9 +23,9 @@ module Bootstrap.Grid.Row exposing (..)
 
 -}
 
-import Html
+import Bootstrap.General.Internal exposing (HorizontalAlign(..), ScreenSize(..))
 import Bootstrap.Grid.Internal as Internal exposing (..)
-import Bootstrap.General.Internal exposing (ScreenSize(..), HorizontalAlign(..))
+import Html
 
 
 {-| Opaque type representing valid row options
